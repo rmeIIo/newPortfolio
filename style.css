@@ -16,11 +16,11 @@
 /*NAVBAR*/
 
 .navbarContainer {
-    background: var(--black);
+    background: var(--black) !important;
     max-height: 15vh;
 }
 
-.navbar {
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,8 +32,9 @@
 }
 
 .itemsContainer {
-    display: flex;
+    display: flex !important;
     align-items: center;
+    justify-content: space-between !important;
 }
 
 .navItems {
@@ -58,13 +59,9 @@
     color: var(--gray);
 }
 
-.socialMedia {
-    margin-right: 1%;
-}
-
 .socialMedia a i {
     font-size: 2vw;
-    margin-left: 2vw;
+    margin-right: 2vw !important;
     color: var(--white);
     transition: 0.5s;
 }
@@ -72,4 +69,129 @@
 .socialMedia a i:hover {
     scale: 120%;
     color: var(--gray);
+}
+
+/*MAIN*/
+.firstPage {
+    display: flex;
+}
+
+.firstPage img {
+    width: 500px;
+    margin-top: 25px;
+    margin-left: 4em;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-top: 5em;
+    margin-right: 5vw;
+}
+
+.title h1, .title h2 {
+    font-weight: 700;
+    font-size: 4em;
+    text-align: right;
+    justify-content: end;
+}
+
+.name p {
+    font-weight: 700;
+    font-size: 1.5em;
+    letter-spacing: 20px;
+    margin-top: 2em;
+}
+
+.contatoButton {
+    align-self: flex-end;
+    width: 122px;
+    height: 40px;
+    border-radius: 18px;
+    background: var(--black);
+    border: none;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.contatoButton:hover {
+    scale: 110%;
+    background: none;
+    border: 1px solid var(--gray);
+    color: var(--black);
+}
+
+.secondPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secondPage h3 {
+    margin-top: 115px;
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 10px;
+}
+
+.contentPage {
+    display: flex;
+}
+
+.contentText {
+    margin-top: 115px;
+}
+
+.contentText p {
+    margin-left: 70px;
+}
+
+.contentPage img {
+    width: 700px;
+}
+
+.socialMediaBox {
+    margin-top: 67px;
+    max-width: 450px;
+    min-height: 134px;
+    background: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.socialMediaBox a {
+    margin-left: 60px;
+    color: var(--white);
+    font-size: 30px;
+}
+
+.socialMediaBox a i span {
+    font-size: 16px;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.footer {
+    background-color: var(--black);
+    max-height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+}
+
+.footer p {
+    margin-top: 10px;
+}
+
+.footer > div > a > i {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.dev {
+    margin-left: 48px;
 }
