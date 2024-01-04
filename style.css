@@ -71,6 +71,12 @@
     color: var(--gray);
 }
 
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: 10vw;
+    }
+}
+
 /*MAIN*/
 .firstPage {
     display: flex;
@@ -175,6 +181,129 @@
     font-weight: 700;
 }
 
+@media screen and (max-width: 768px) {
+    .firstPage {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .firstPage img {
+        width: 250px !important;
+    }
+
+    .title {
+        text-align: center;
+    }
+    
+    .title h1, .title h2 {
+        font-size: 2em !important;
+        text-align: center;
+    }
+    
+    .contatoButton {
+        align-self: center;
+    }
+    
+    .secondPage h3 {
+        font-size: 1.5em !important;
+        width: 300px !important;
+    }
+    
+    .socialMediaBox {
+        max-width: 400px !important;
+    }
+    
+    .socialMediaBox a {
+        margin-left: 30px !important;
+        font-size: 20px !important;
+    }
+    
+    .socialMediaBox a i span {
+        font-size: 16px;
+        margin-left: 30px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .firstPage img {
+        margin-left: 2em;
+    }
+
+    .title {
+        margin-left: 2em;
+    }
+
+    .title h1, .title h2 {
+        font-size: 3em;
+    }
+    
+    .name p {
+        font-size: 1.2em;
+    }
+    
+    .secondPage h3 {
+        width: 500px;
+        text-align: center;
+    }
+
+    .contentText {
+        margin-top: 60px;
+    }
+
+    .contentPage {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contentText p {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .contentPage img {
+        display: none;
+    }
+    
+    .socialMediaBox {
+        margin-top: 67px;
+        max-width: 450px;
+        min-height: 134px;
+        background: var(--black);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .socialMediaBox a {
+        margin-left: 60px;
+        color: var(--white);
+        font-size: 30px;
+    }
+    
+    .socialMediaBox a i span {
+        font-size: 16px;
+        margin-left: 30px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .firstPage img {
+        width: 300px;
+    }
+
+    .contentPage img {
+        width: 500px;
+    }
+
+    .socialMediaBox {
+        margin-bottom: 3em;
+    }
+}
+
+/*FOOTER*/
+
 .footer {
     background-color: var(--black);
     max-height: 6vh;
@@ -194,4 +323,16 @@
 
 .dev {
     margin-left: 48px;
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        max-height: 100vh;
+        align-items: center;
+    }
+
+    .dev {
+        margin-left: 0;
+    }
 }
