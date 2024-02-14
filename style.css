@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 :root {
     --white: #FFFFFF;
@@ -60,7 +61,7 @@
 }
 
 .socialMedia a i {
-    font-size: 2vw;
+    font-size: 1.5em;
     margin-right: 2vw !important;
     color: var(--white);
     transition: 0.5s;
@@ -69,6 +70,22 @@
 .socialMedia a i:hover {
     scale: 120%;
     color: var(--gray);
+}
+
+@media screen and (max-width: 1025px) {
+    .d-lg-none {
+        display: flex;
+        justify-content: center;
+        margin-left: 2%;
+    }
+
+    .navItems a {
+        margin-left: 0;
+    }
+
+    .socialMedia a i {
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -214,12 +231,7 @@
     }
     
     .socialMediaBox a {
-        margin-left: 30px !important;
-        font-size: 20px !important;
-    }
-    
-    .socialMediaBox a i span {
-        font-size: 16px;
+        margin-left: 30;
         margin-left: 30px;
         font-weight: 700;
     }
@@ -334,5 +346,137 @@
 
     .dev {
         margin-left: 0;
+    }
+}
+
+/*SOBRE*/
+
+.quemSouContainer {
+    display: flex;
+    margin-left: 72px;
+    margin-right: 92px;
+    justify-content: center;
+    align-items: center;
+}
+
+.quemSouText h1 {
+    width: 80%;
+    font-size: 5em;
+    font-weight: 700;
+}
+
+.quemSouText ul {
+    list-style: none;
+}
+
+.quemSouImg img {
+    width: 512px;
+    margin-left: 100px;
+}
+
+.techs h2 {
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-top: 58px;
+    margin-bottom: 58px;
+}
+
+.techCards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 5%;
+}
+
+.techCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    min-height: 137px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 30%);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 30%);
+    transition: all 0.3s;
+    margin-bottom: 100px;
+
+}
+
+.techCard i {
+    font-size: 80px;
+    color: var(--black);
+}
+
+.techCard img {
+    width: 160px;
+}
+
+.techCard:hover {
+    transform: scale(110%);
+    transition: all 0.3s;
+}
+
+@media screen and (max-width: 1025px) {
+    .quemSouContainer {
+        margin-top: 5%;
+    }
+
+    .quemSouImg img {
+        width: 300px;
+    }
+
+    .quemSouText h1 {
+        width: 100%;
+        font-size: 4em;
+    }
+
+    .techCards {
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 7%;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .quemSouImg {
+        width: 40%;
+    }
+
+    .quemSouImg img {
+        width: 260px;
+    }
+    
+    .quemSouText h1 {
+        font-size: 3.5em;
+    }
+
+    .techCards {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .quemSouContainer {
+        flex-direction: column;
+    }
+
+    .quemSouText h1 {
+        font-size: 2.5em;
+    }
+
+    .quemSouImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quemSouImg img {
+        margin-left: 0px;
+    }
+
+    .techCards {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 20%;
     }
 }
